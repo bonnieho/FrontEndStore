@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
 <body>
+	<div class="row">
+		<div class="shrink columns">this will take the content width</div>
+		<div class="columns">take the rest</div>
+	</div>
 
+<!--
 	{{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
 
 	{{> navigation}}
@@ -27,7 +32,7 @@
 			<li>{{this.name}} {{this.lname}}</li>
 		{{/each}}
 	{{/ifpage}}
-
+-->
 <script src="{{root}}assets/js/app.js"></script>
 </body>
 </html>

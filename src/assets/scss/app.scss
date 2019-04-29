@@ -12,7 +12,7 @@
 // Grids (choose one)
 @include foundation-xy-grid-classes;
 // @include foundation-grid;
-// @include foundation-flex-grid;
+@include foundation-flex-grid;
 
 // Generic components
 @include foundation-button;
@@ -54,7 +54,7 @@
 @include foundation-top-bar;
 
 // Helpers
-@include foundation-float-classes;
+// @include foundation-float-classes;
 @include foundation-flex-classes;
 @include foundation-visibility-classes;
 // @include foundation-prototype-classes;
