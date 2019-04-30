@@ -15,3 +15,11 @@ require('foundation-sites');
 
 
 $(document).foundation();
+
+$(window).on('changed.zf.mediaquery', function(event, newSize, oldSize){
+	//console.log("The new size is:" + newSize);
+	//console.log("The old size is:" + oldSize);
+	if(newSize ==='small' && oldSize === 'medium') {
+		$('main-menu ul').removeClass('expanded');
+	}
+});
