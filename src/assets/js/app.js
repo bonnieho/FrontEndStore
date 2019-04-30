@@ -16,6 +16,9 @@ require('foundation-sites');
 
 $(document).foundation();
 
+
+// documentation on all of this is here:
+// https://foundation.zurb.com/sites/docs/media-queries.html
 $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize){
 	//console.log("The new size is:" + newSize);
 	//console.log("The old size is:" + oldSize);
