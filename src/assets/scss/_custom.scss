@@ -11,3 +11,26 @@ body {
 header {
 	padding: rem-calc(50 0);
 }
+
+.main-navigation {
+	background-color: A$primary-color;
+	margin-bottom: rem-calc(20);
+}
+
+.menu {
+	> li {
+		&.active,
+		&.hover {
+			background-color: $secondary-color;
+			a {
+				color: $primary-color;
+			}
+		}
+	}
+	> a {
+		color: $white;
+		font-weight: bold;
+		text-transform: uppercase;
+		justify-content: space-around!important;
+	}
+}
