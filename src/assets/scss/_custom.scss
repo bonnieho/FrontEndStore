@@ -36,5 +36,8 @@ header {
 }
 
 div.responsive-menu {
-	
+	padding: rem-calc(10);
+	.menu-icon {
+		@include hamburger($color, $color-hover, $width, $height, $weight, $bars);
+	}
 }
