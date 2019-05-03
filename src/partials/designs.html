@@ -8,8 +8,14 @@
 				<div class="shirt">
 					<h4 class="text-center">{{this.name}}</h4>
 					<img src="assets/img/shirts/{{this.image}}">
-					<p class="price">$ {{this.price}}</p>
-					
+					<div class="row text-center align-middle">
+						<div class="columns">
+							<p class="price">$ {{this.price}}</p>
+						</div>
+						<div class="columns">
+							<a href="#" class="button">Buy Now</a>
+						</div>
+					</div><!-- END .row -->
 				</div><!-- END .shirt -->
 			</div><!-- END .small-6 .medium-4 -->
 			{{/each }}
