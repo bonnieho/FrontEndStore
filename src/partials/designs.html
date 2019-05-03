@@ -5,10 +5,13 @@
 		<div class="row">
 			{{#each shirts}}
 			<div class="small-6 medium-4 columns">
-				<h4>{{this.name}}</h4>
-				<p class="price">$ {{this.price}}</p>
-				<img src="assets/img/shirts/{{this.image}}">
-			</div>
+				<div class="shirt">
+					<h4 class="text-center">{{this.name}}</h4>
+					<img src="assets/img/shirts/{{this.image}}">
+					<p class="price">$ {{this.price}}</p>
+					
+				</div><!-- END .shirt -->
+			</div><!-- END .small-6 .medium-4 -->
 			{{/each }}
 		</div>
 	</div>
