@@ -36,6 +36,23 @@ header {
 	}
 }
 
+.social {
+	font-size: rem-calc(60);
+	> li {
+		margin-right: rem-calc(12);
+		&:hover {
+			background-color: transparent;
+		}
+		> a {
+			padding: rem-calc(0);
+			&:hover {
+				color:$white;
+			}
+		}
+	}
+}
+
+
 div.responsive-menu {
 	padding: rem-calc(10);
 	.menu-icon {
@@ -62,7 +79,7 @@ div.about-us {
 		display: block;
 	}
 	h3 {
-		margin-bottom rem-calc(15);
+		margin-bottom: rem-calc(15);
 		text-transform: uppercase;
 	}
 }
