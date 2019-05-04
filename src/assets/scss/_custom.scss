@@ -117,8 +117,20 @@ div.our-designs {
 			text-transform: uppercase;
 		}
 	}
+}
 
-
+.testimonials {
+	margin-top: rem-calc(30);
+	.orbit {
+		background-color: $white;
+		border-radius: $global-radius;
+		blockquote {
+			font-size: rem-calc(20);
+		}
+		cite {
+			font-weight: bold;
+		}
+	}
 }
 
 
