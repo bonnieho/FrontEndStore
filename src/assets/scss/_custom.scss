@@ -124,11 +124,30 @@ div.our-designs {
 	.orbit {
 		background-color: $white;
 		border-radius: $global-radius;
+		margin-bottom: rem-calc(20);
+		@include breakpoint(medium) {
+			margin: 0;
+		}
 		blockquote {
 			font-size: rem-calc(20);
 		}
 		cite {
 			font-weight: bold;
+		}
+	}
+
+	/* these styles perform the same function as flipping orders at certain breakpoints using .small-order-2 .medium-order-1 and the like */
+
+	.imageTestimonials {
+		order: 2;
+		@include breakpoint(medium) {
+			order: 1;
+		}
+	}
+	.ourTestimonials {
+		order: 1;
+		@include breakpoint(medium) {
+			order: 2;
 		}
 	}
 }
