@@ -1,24 +1,25 @@
 <div class="row">
-	<div class="columns">
-		<h2 class="text-center">Our Designs</h2>
-
-		<div class="row">
-			{{#each shirts}}
-			<div class="small-6 medium-4 columns">
-				<div class="shirt">
-					<h4 class="text-center">{{this.name}}</h4>
-					<img src="assets/img/shirts/{{this.image}}">
-					<div class="row text-center align-middle">
-						<div class="columns">
-							<p class="price">$ {{this.price}}</p>
-						</div>
-						<div class="columns">
-							<a href="#" class="button">Buy Now</a>
-						</div>
-					</div><!-- END .row -->
-				</div><!-- END .shirt -->
-			</div><!-- END .small-6 .medium-4 -->
-			{{/each }}
-		</div>
-	</div>
-</div>
+	<div class="our-designs">
+		<div class="columns">
+			<h2 class="text-center">Our Designs</h2>
+			<div class="row">
+				{{#each shirts}}
+				<div class="small-6 medium-4 columns">
+					<div class="shirt">
+						<h4 class="text-center">{{this.name}}</h4>
+						<img src="assets/img/shirts/{{this.image}}">
+						<div class="row text-center align-middle">
+							<div class="columns">
+								<p class="price">$ {{this.price}}</p>
+							</div>
+							<div class="columns">
+								<a href="#" class="button">Buy Now</a>
+							</div>
+						</div><!-- END .row -->
+					</div><!-- END .shirt -->
+				</div><!-- END .small-6 .medium-4 -->
+				{{/each }}
+			</div><!-- END .row -->
+		</div><!-- END .columns -->
+	</div><!-- END .our-designs -->
+</div><!-- END .row -->
