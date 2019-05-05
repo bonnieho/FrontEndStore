@@ -37,7 +37,7 @@ header {
 	}
 	> a {
 		color: $white;
-		font-weight: bold;
+		font-weight: $global-weight-bold;
 		text-transform: uppercase;
 		justify-content: space-around!important;
 	}
@@ -109,12 +109,12 @@ div.our-designs {
 		p.price {
 			color: $primary-color;
 			font-size: rem-calc(40);
-			font-weight: bold;
+			font-weight: $global-weight-bold;
 		}
 		.button {
 			@include button-style($secondary-color, darken($secondary-color, 5), $primary-color);
 			font-size: rem-calc(20);
-			font-weight: bold;
+			font-weight: $global-weight-bold;
 			text-transform: uppercase;
 		}
 	}
@@ -133,7 +133,7 @@ div.our-designs {
 			font-size: rem-calc(20);
 		}
 		cite {
-			font-weight: bold;
+			font-weight: $global-weight-bold;
 		}
 	}
 
@@ -186,6 +186,24 @@ div.our-designs {
 		}
 	}
 }
+
+
+footer {
+	margin-top: rem-calc(40);
+	background-color: $primary-color;
+	padding: rem-calc(30);
+	p {
+		margin: 0;
+		font-weight: $global-weight-bold;
+		color: $white;
+	}
+}
+
+
+
+
+
+
 
 
 
