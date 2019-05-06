@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row column"><!-- had to add .column to get the slider to display at full size (bc of differences in versions of Foundation) -->
 	<div class="orbit" role="region" aria-label="Our Promos" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out">
 		<ul class="orbit-container">
 			<button class="orbit-previous">
@@ -11,9 +11,11 @@
 			</button>
 			<li class="is-active orbit-slide">
 				<img class="orbit-image" src="assets/img/slider_1.jpg" alt="slider 1 image" />
+			</li>
+			<li class="orbit-slide">
 				<img class="orbit-image" src="assets/img/slider_2.jpg" alt="slider 2 image" />
 			</li>
-		</ul>
+		</ul><!-- END .orbit-container -->
 
 		<nav class="orbit-bullets">
 			<button class="is-active" data-slide="0">
