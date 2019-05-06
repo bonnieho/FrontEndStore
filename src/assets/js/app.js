@@ -41,7 +41,7 @@ if(size === 'small'){
 
 // tracks current postition when scrolling
 var navigation = $('#main-navigation');
-nav = new Foundation.Magellan(navigation);
+var nav = new Foundation.Magellan(navigation);
 
 $(window).scroll(function() {
 	console.log(nav.scrollPos);
