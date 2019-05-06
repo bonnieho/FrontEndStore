@@ -31,8 +31,28 @@ $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize){
 	}
 });
 
+// takes the current size of the screen
 var size = Foundation.MediaQuery.current;
 //console.log(size);
 if(size === 'small'){
 	$('main-menu ul').removeClass('expanded');
 }
+
+
+// tracks current postition when scrolling
+var navigation = $('#main-navigation');
+nav = new Foundation.Magellan(navigation);
+
+$(window).scroll(function() {
+	console.log(nav.scrollPos);
+	if(nav.scrollPos >= 300) {
+		$(navigation).addClass('fixed');
+	} else {
+		$(navigation).removeClass('fixed');
+	}
+});
+
+
+
+
+

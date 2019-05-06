@@ -23,6 +23,14 @@ header {
 .main-navigation {
 	background-color: $primary-color;
 	margin-bottom: rem-calc(20);
+	width: 100%;
+	/* this PLUS the jQuery stuff adding a fixed class in app.js fixes the navigation bar at the top of the window as you scroll down */
+	&.fixed {
+		top:0;
+		left: 0;
+		position: fixed;
+		z-index: 1000;
+	}
 }
 
 .menu {
