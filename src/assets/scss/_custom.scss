@@ -21,25 +21,25 @@ header {
 }
 
 .main-navigation {
-	background-color: A$primary-color;
+	background-color: $primary-color;
 	margin-bottom: rem-calc(20);
 }
 
 .menu {
 	> li {
 		&.active,
-		&.hover {
+		&:hover {
 			background-color: $secondary-color;
 			a {
 				color: $primary-color;
 			}
 		}
-	}
-	> a {
-		color: $white;
-		font-weight: $global-weight-bold;
-		text-transform: uppercase;
-		justify-content: space-around!important;
+		> a {
+			color: $white;
+			text-transform: uppercase;
+			font-weight: $global-weight-bold;
+			justify-content: space-around!important;
+		}
 	}
 }
 
@@ -196,6 +196,22 @@ footer {
 		margin: 0;
 		font-weight: $global-weight-bold;
 		color: $white;
+	}
+	.social {
+		font-size: rem-calc(60);
+		> li {
+			margin-right: rem-calc(12);
+			&:hover {
+				background-color: transparent;
+			}
+		> a {
+			padding: rem-calc(0);
+			color: $white;
+				&:hover {
+					color:$secondary-color;
+				}
+			}
+		}
 	}
 }
 
